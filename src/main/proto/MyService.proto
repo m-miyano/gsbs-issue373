@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package com.example.gsbsissue373;
+option java_package = 'com.example.gsbsissue373.proto';
+
+service MyService {
+  rpc Streaming(stream MyRequest) returns (stream MyResponse) {}
+}
+
+message MyRequest {}
+
+message MyResponse {}
