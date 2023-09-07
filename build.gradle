@@ -20,11 +20,12 @@ configurations {
 
 repositories {
     mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
 }
 
 dependencies {
 
-    implementation 'io.github.lognet:grpc-spring-boot-starter:5.1.4'
+    implementation 'io.github.lognet:grpc-spring-boot-starter:5.1.5-SNAPSHOT'
 
     implementation 'org.springframework.boot:spring-boot-starter'
 
